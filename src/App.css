@@ -1,0 +1,93 @@
+.page {
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 720px;
+}
+
+.title {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  font-size: clamp(15px, 2.5vw, 18px);
+  color: var(--text);
+  margin: 0 0 48px;
+}
+
+.cards {
+  display: flex;
+  gap: clamp(10px, 2.5vw, 24px);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.time-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: clamp(72px, 20vw, 120px);
+  padding: clamp(16px, 3vw, 28px) clamp(8px, 2vw, 16px);
+  border-radius: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+}
+
+.time-value {
+  font-size: clamp(28px, 7vw, 52px);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  animation: tick-in 0.4s ease-out;
+}
+
+@keyframes tick-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.time-label {
+  font-size: clamp(11px, 2vw, 14px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+
+.finished-message {
+  font-size: clamp(32px, 7vw, 56px);
+  font-weight: 700;
+  color: var(--accent);
+  margin: 24px 0 48px;
+}
+
+.target-date {
+  margin-top: 40px;
+  font-size: clamp(13px, 2vw, 15px);
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
