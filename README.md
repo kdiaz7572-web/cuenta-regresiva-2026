@@ -2,6 +2,8 @@
 
 Página web de cuenta regresiva en tiempo real hacia el **3 de diciembre de 2026, 5:30 a. m. (hora de Costa Rica, UTC-6)**. Construida con React + Vite.
 
+🔗 **Sitio publicado:** https://cuenta-regresiva-2026.vercel.app
+
 ## Características
 
 - Cuenta regresiva en días, horas, minutos y segundos, actualizada cada segundo.
