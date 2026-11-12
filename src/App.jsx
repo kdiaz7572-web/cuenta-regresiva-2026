@@ -42,7 +42,7 @@ function App() {
           </div>
         )}
 
-        <p className="target-date">3 de diciembre de 2026 | 5:30 a. m.</p>
+        <p className="target-date">Viernes 11 de diciembre de 2026 | 5:30 p. m.</p>
       </main>
     </div>
   )

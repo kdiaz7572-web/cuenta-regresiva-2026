@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 // Costa Rica no usa horario de verano: UTC-6 todo el año.
 // Con el offset explícito en el ISO string, Date lo interpreta
 // en esa zona sin depender de la zona horaria del navegador.
-const TARGET_DATE = new Date('2026-12-03T05:30:00-06:00')
+const TARGET_DATE = new Date('2026-12-11T17:30:00-06:00')
 
 function getTimeLeft() {
   const diff = TARGET_DATE.getTime() - Date.now()
